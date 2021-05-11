@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+
+body {
+    background-image: url(img/fondo.svg);
+    background-size: cover;
+}
+
+header {
+    position: relative;
+}
+
+#logo {
+    font-size: 0;
+    background: url(recursos/logo.svg);
+    width: 125px;
+    height: 50px;
+    position: absolute;
+    top: 2px;
+    z-index: 1;
+    left: 37%;
+}
+
+#Carousel {
+    position: relative;
+}
+
+.bannertexto {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+.bannertexto h2 {
+    font-family: 'Bebas Neue';
+    font-size: 3em;
+}
+
+.bannertexto p{
+    margin-top: -.8em;
+
+}
+
+.bannertexto a {
+    background-color: #ED7E29;
+    padding: .6em 1em;
+    border-radius: 7px 7px 7px 7px;
+    color: black;
+    font-weight: bold;
+}
+
+.bannertexto a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #C95D14;
+}
+
+.desplegar {
+    display: none;
+}
+
+.zorro {
+    max-height: 500px;
+}
+
+#huella {
+    max-height: 150px;
+}
+
+#enviado{
+    display: none;
+}
+
+#enviado:target {
+    display: flex;
+    align-content: center;
+    width: 90vw;
+    height: 90vh;
+    max-height: 450px;
+    z-index: 1;
+    position: absolute;
+}
+
+footer a {
+    display: block;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    background-image: url(recursos/sprites.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 380%;
+}
+
+footer li:nth-of-type(2) a {
+    background-position: center;
+}
+
+footer li:last-of-type a {
+    background-position: right;
+}
+
+@media screen and (max-width: 639px) and (orientation: landscape) {
+
+    #enviado:target {
+        height: 90vw;
+        width: 70vw;
+        left: 15%;
+    }
+
+}
+
+@media screen and (min-width: 481px) {
+    .bannertexto {
+        top: 5%;
+        left: 29%;
+    }
+
+    #enviado:target {
+        width: 70vw;
+       height: 70vh;
+       max-width: 598px;
+       left: 15%;       
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #conocimientos {
+        background-image: url(img/conocimientos-01.svg);
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .zorrolove {
+        background-image: url(img/zorro-02.svg);
+        background-size: cover;
+    }
+
+    #conocimientos {
+        background-image: url(img/conocimientos-03.svg);
+        background-size: cover;
+    }
+
+    
+}
+
+@media screen and (min-width: 780px) {
+    .bannertexto {
+        top: 10%;
+        left: 40%;
+    }
+    
+    .bannertexto h2 {
+        font-size: 4em;
+    }
+    
+    .bannertexto p {
+        font-size: 1.5em;
+    }
+
+    #enviado:target {
+       left: 15%;       
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .nav-item {
+        background-color: rgb(106, 176, 199);
+        margin: 1em 0;
+    }
+    .nav-item:first-child {
+        margin-top: 1.5em;
+    }
+    .nav-link {
+        color: whitesmoke!important;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    #logo {
+        left: 2%;
+    }
+    .bannertexto {
+        top: 30%;
+        left: 40%;
+    }
+    
+    .bannertexto h2{
+        font-size: 5em;
+    }
+    
+    #sobremi {
+        background-image: url(img/sobremi-02.svg);
+        background-size: cover;
+    }
+
+    #habilidades {
+        background-image: url(img/conocimientos-01.svg);
+        background-size: 40%;
+    }
+
+    #enviado:target {
+        left: 24%;       
+     }
+
+    #contactame {
+        color: white;
+        background-image: url(img/contacto-02.svg);
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .bannertexto h2 {
+        font-size: 6em;
+    }
+
+    .bannertexto a {
+        font-size: 1.5em;
+    }
+
+    #enviado:target {
+        left: 32%;       
+     }
+}
